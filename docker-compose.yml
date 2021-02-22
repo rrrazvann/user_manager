@@ -1,0 +1,10 @@
+version: '3'
+services:
+  web:
+    container_name: user_manager_web
+    ports:
+      - "4273:4273"
+    hostname: user_manager_web
+    build:
+      context: .
+      dockerfile: Dockerfile
